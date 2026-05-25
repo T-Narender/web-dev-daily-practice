@@ -3,28 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <title>Weather App </title>
 </head>
 <body>
-  <h2>Notes App</h2>
-  <textarea id="noteInput" rows="3" placeholder="Write a note..."></textarea>
-  <div id="noteInputId"></div>
-  <button onclick="addNote()">Add Note</button>
+  <h2>Weather App</h2>
+  <input type="text" id="cityInput" placeholder="Enter city name...">
+  <button onclick="getWeather()">Search</button>
+  
+  <p id="loader">Loading...</p>
+  <p id="error"></p>
 
-  <hr />
-  <input type="text" id="search" placeholder="Search notes..." oninput="renderNotes()" />
+  <div id="weatherCard">
+    <h3 id="cityName"></h3>
+    <p id="temperature"></p>
+    <p id="description"></p>
+    <p id="humidity"></p>
+    <p id="wind"></p>
+  </div>
+  
 
-  <div id="notesContainer"></div>
-  <hr>
-
-  <button onclick="deleteAll()">Delete All </button>
-  <p id="count"></p>
-
-
-  <script src="notes.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
