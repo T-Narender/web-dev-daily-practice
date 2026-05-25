@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>URL Shortener</title>
+    <style>
+      body {
+        font-family: system-ui, Arial;
+        max-width: 680px;
+        margin: 48px auto;
+        padding: 0 16px;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+      }
+      button {
+        padding: 8px 12px;
+        font-size: 16px;
+        margin-top: 8px;
+      }
+      pre {
+        background: #f6f6f6;
+        padding: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>URL Shortener</h1>
+    <p>Enter a URL and click Shorten.</p>
+    <input id="urlInput" type="text" placeholder="https://example.com" />
+    <div>
+      <button id="shortenBtn">Shorten</button>
+    </div>
+
+    <div id="loading" style="display: none;">Loading...</div>
+
+    <div>
+      <button id="getAllUrlsBtn">get all URLs</button>
+    </div>
+
+    <h3>Result</h3>
+    <div id="result">No result yet.</div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
