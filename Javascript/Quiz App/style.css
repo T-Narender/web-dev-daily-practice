@@ -1,0 +1,50 @@
+body {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 0 1rem;
+}
+.option {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  background: white;
+  font-size: 15px;
+  text-align: left;
+}
+.option:hover {
+  background: #f0f0f0;
+}
+.option.correct {
+  background: #e6f9f0;
+  border-color: #27ae60;
+}
+.option.wrong {
+  background: #fdecea;
+  border-color: #e74c3c;
+}
+.option:disabled {
+  cursor: not-allowed;
+}
+#timerBar {
+  height: 8px;
+  background: #27ae60;
+  border-radius: 4px;
+  transition: width 1s linear;
+}
+#timerTrack {
+  background: #eee;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+#resultBox {
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: none;
+}
