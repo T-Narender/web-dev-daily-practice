@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box; 
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f0f2f5;
+}
+h2 {
+  text-align: center;
+}
+
+.board {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.column {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 260px;
+  min-height: 400px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.column h3 {
+  margin: 0 0 1rem;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.column.drag-over {
+  background: #eef2ff;
+  border: 2px dashed #7f77dd;
+}
+
+.card {
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  cursor: grab;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.card:active {
+  cursor: grabbing;
+}
+.card.dragging {
+  opacity: 0.4;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #aaa;
+  font-size: 16px;
+  padding: 0 4px;
+}
+.delete-btn:hover {
+  color: red;
+}
+
+.add-area {
+  margin-top: 1rem;
+}
+.add-area input {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+.add-area button {
+  width: 100%;
+  padding: 7px;
+  background: #7f77dd;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.add-area button:hover {
+  background: #6b67c9;
+}
